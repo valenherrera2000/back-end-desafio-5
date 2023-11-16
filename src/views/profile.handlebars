@@ -1,0 +1,26 @@
+<article>
+  <header>
+    <h1>Bienvenido, {{user.first_name}} {{user.last_name}}!</h1>
+  </header>
+  <section>
+    <h2>Nuestros Productos</h2>
+    <ul>
+      {{#each products}}
+        <li>
+          <strong>{{this.title}}</strong>
+          {{#if this.description}}
+            - {{this.description}}
+          {{/if}}
+          {{#if this.price}}
+            - ${{this.price}}
+          {{/if}}
+        </li>
+      {{/each}}
+    </ul>
+  </section>
+</article>
+
+
+
+
+
