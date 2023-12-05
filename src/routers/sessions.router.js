@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import passport from 'passport';
+import { Strategy as LocalStrategy } from 'passport-local'; 
 import userSchema from '../models/user.model.js';
 
 const router = Router();
